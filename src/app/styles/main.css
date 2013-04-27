@@ -1,0 +1,108 @@
+body {
+    background: #fff;
+    font-family: 'Helvetica';
+    font-weight: 200;
+    color: #333;
+}
+
+.message {
+    background: #3cb371;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    z-index: 10;
+    text-align: center;
+    -webkit-transition:all .4s linear 0;
+    -moz-transition:all .4s linear 0;
+    -o-transition:all .4s linear 0;
+    -ms-transition:all .4s linear 0;
+    transition:all .4s linear 0;
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.message.error {
+    background: #dc143c;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    width: 400px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.map {
+    height: 300px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: -1px;
+}
+
+input {
+    border: none;
+    display: inline-block;
+    width: 88%;
+    font-family: 'Helvetica';
+    font-size: 22px;
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+    margin: 3px 0;
+    padding: 0 3px;
+    outline: none;
+    text-transform: uppercase;
+    position: relative;
+    top: 5px;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    border: 0;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    width: 9%;
+    text-indent: -400px;
+    background: transparent url(../images/mic.png) no-repeat 100%;
+    background-size: contain;
+}
+
+button.listening {
+    background-image: url(../images/mic-green.png);
+}
+
+dt {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 8px 3px 3px 3px;
+    border-top: 1px solid #eee;
+    padding-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+dt span {
+    display: inline-block;
+    margin-right: 5px;
+    background: #3cb371;
+    color: #fff;
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+dd {
+    font-size: 12px;
+    margin: 0 3px;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>jHERE - Maps Made Easy</title>
+    <meta name="viewport" content="width=device-width" id="viewport">
+    <link href='http://fonts.googleapis.com/css?family=Copse|Oswald|Syncopate|Titillium+Web:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57"href="icon.png" />
+
+    <meta property="og:title" content="jHERE - Maps Made Easy"/>
+    <meta property="og:url" content="http://jhere.net"/>
+    <meta property="og:site_name" content="jHERE"/>
+    <meta property="og:image" content="http://jhere.net/icon.png"/>
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251953-1']);
+        _gaq.push(['_setDomainName', 'jhere.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+
+    <header class="home">
+        <div class="overlay"></div>
+        <div id="map"></div>
+        <div class="title">
+            <h1>jHERE</h1>
+            <h2>Maps made easy.</h2>
+            <div class="get">
+                <a href="https://github.com/mmarcon/jhere/archive/master.zip" class="download"><span></span>Download jHERE</a>
+                <a href="https://github.com/mmarcon/jhere" class="fork"><span></span>Fork on Github</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">jHERE</a></li>
+                <li><a href="/docs.html">Docs</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main" class="content">
+        <section>
+            <p>
+            <strong>Maps are cool</strong>, but map APIs are complicated. jHERE solves this problem
+            by offering a simple but powerful map API in the form of a <strong><a href="http://jquery.com/">jQuery</a> (or <a href="http://zeptojs.com/">Zepto.JS</a>, or <a href="http://tirejs.com/">Tire</a>) plugin</strong>.
+            </p>
+            <p class="download-link"><a href="https://github.com/mmarcon/jhere/archive/master.zip" class="download">Download jHERE</a> and start making beautiful maps now!</p>
+            <p>
+                With jHERE, you can easily add <strong>interactive maps</strong> to your website. In only 5KB (2KB Gzipped), you get a powerful map API, highly customizable <strong>markers</strong>, event handling and <strong>info bubbles</strong>. Bonus features are <strong>KML</strong> support and data visualization via <strong>heatmaps</strong>.
+            </p>
+            <p>
+                jHERE is built on top of the awesome and very solid <a href="http://developer.here.net">HERE Maps API</a>. For advanced users, the native
+                API is exposed by jHERE, thus offering unlimited possibilities of customization.
+            </p>
+        </section>
+    </section>
+
+    <section id="examples" class="content">
+        <header>
+            <h3>Examples</h3>
+        </header>
+        <section>
+            <p>
+                The examples below give an overview of what jHERE can do.
+                Experiment with jHERE in <a href="http://bin.jhere.net">the playground</a>: the code is so simple that it needs no explanation.
+            </p>
+        </section>
+        <section class="demos">
+            <ul>
+                <li class="simple" title="Simple map, simple interaction, centered in New York">
+                    <span>Simple Map</span>
+                    <a class="playground" href="http://bin.jhere.net/4066840" target="_blank"></a>
+                </li>
+                <li class="satellite" title="Simple map, simple interaction, satellite view, contextual menu on right click.">
+                    <span>Satellite</span>
+                    <a class="playground" href="http://bin.jhere.net/4066844" target="_blank"></a>
+                </li>
+                <li class="marker" title="Map with a custom marker. Clicking on the marker fires an event.">
+                    <span>Marker</span>
+                    <a class="playground" href="http://bin.jhere.net/4066852" target="_blank"></a>
+                </li>
+                <li class="bubble" title="Map with a non-closable info bubble">
+                    <span>Bubble</span>
+                    <a class="playground" href="http://bin.jhere.net/4066864" target="_blank"></a>
+                </li>
+                <li class="kml" title="Map showing a KML file. Interaction is disabled.">
+                    <span>KML</span>
+                    <a class="playground" href="http://bin.jhere.net/5128075" target="_blank"></a>
+                </li>
+                <li class="heatmap" title="Heatmap dataviz. Interaction is disabled.">
+                    <span>Heatmap</span>
+                    <a class="playground" href="http://bin.jhere.net/4066929" target="_blank"></a>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <section id="extensions" class="content">
+        <header>
+            <h3>Extensions</h3>
+        </header>
+        <section>
+            <p>
+                In order to keep jHERE as small as possible, the plugin contains only a subset of all
+                the functionalities that are available via the HERE Maps API.
+            </p>
+            <p>
+                Everything else is available via extensions. A few of them are <a href="https://github.com/mmarcon/jhere/blob/master/EXTENSIONS.md" title="jHERE extensions">already available on Github</a>.
+            </p>
+            <p>
+                <strong>Geocoding</strong>, <strong>routing</strong>, <strong>shapes</strong> are just a few examples
+                of what can be done with extensions.
+            </p>
+            <p>
+                It is possible to <a href="http://custom.jhere.net" title="Make a custom build of jHERE">create a custom build</a> of jHERE that includes all the official extensions you need minified and concatenated in a single file.
+            </p>
+        </section>
+        <section class="demos">
+            <ul>
+                <li class="geocoding" title="Geocode example">
+                    <span>Geocoding</span>
+                    <a class="playground" href="http://bin.jhere.net/5050078" target="_blank"></a>
+                </li>
+                <li class="routing" title="Map with a route between two points">
+                    <span>Routing</span>
+                    <a class="playground" href="http://bin.jhere.net/5049948" target="_blank"></a>
+                </li>
+                <li class="shapes" title="Map with a shape.">
+                    <span>Shapes</span>
+                    <a class="playground" href="http://bin.jhere.net/5049954" target="_blank"></a>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <footer>
+        <ul class="social">
+            <li class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://jhere.net" data-text="jHERE - Maps made easy:" data-via="mmarcon" data-related="mmarcon" data-hashtags="jHERE">Tweet</a></li>
+            <li class="twitter-follow"><a href="https://twitter.com/mmarcon" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @mmarcon</a></li>
+            <li class="facebook"><div class="fb-like" data-href="http://jhere.net" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div></li>
+        </ul>
+        <!-- <ul class="links">
+            <li><a href="">Docs</a></li>
+            <li><a href="">Extensions</a></li>
+            <li><a href="">About Me</a></li>
+            <li><a href="">Feedback</a></li>
+        </ul> -->
+        <small>Massimiliano Marcon &copy; 2012-13</small>
+    </footer>
+
+    <!--
+    <a href="http://thenounproject.com/noun/fork/#icon-No5005" target="_blank">Fork</a> designed by <a href="http://thenounproject.com/DmitryBaranovskiy" target="_blank">Dmitry Baranovskiy</a> from The Noun Project
+    <a href="http://thenounproject.com/noun/console/#icon-No8571" target="_blank">Console</a> designed by <a href="http://thenounproject.com/Templarian" target="_blank">Austin Andrews</a> from The Noun Project
+    <a href="http://thenounproject.com/noun/zoom/#icon-No4656" target="_blank">Zoom</a> designed by <a href="http://thenounproject.com/iconify" target="_blank">Scott Lewis</a> from The Noun Project
+    -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jhere-custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=185145734898525";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>
