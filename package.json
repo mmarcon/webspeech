@@ -1,0 +1,27 @@
+{
+  "name": "webspeech",
+  "version": "0.0.0",
+  "description": "A simple experiment with Web Speech API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mmarcon/webspeech.git"
+  },
+  "keywords": [
+    "webspeech",
+    "nlu",
+    "maps",
+    "here",
+    "jhere"
+  ],
+  "author": "Massimiliano Marcon",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "47c540e869a239928d88e0f2cef81f7c1c03ddc1",
+  "dependencies": {
+    "node-static": "~0.6.9"
+  }
+}
