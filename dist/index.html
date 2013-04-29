@@ -6,13 +6,42 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <title>Vocal Search</title>
+        <meta name="description" content="Experiment with Web Speech API">
         <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="styles/95f37b18.main.css">
+
+        <link rel="stylesheet" href="styles/25f66392.main.css">
     </head>
     <body>
+        <header>
+            <h1>Vocal Search</h1>
+            <p>
+                Press S or click on the microphone and speak!
+            </p>
+            <p>
+                <a href="https://github.com/mmarcon/webspeech" class="learn">Learn More</a> about Vocal Search.
+            </p>
+        </header>
+        <div class="pullable">
+            <h2>About Vocal Search</h2>
+            <p>
+                Have you ever wondered how cool it would be if you could talk to a web page
+                instead of having to type stuff into forms?
+            </p>
+            <p>
+                With <strong>Vocal Search</strong> you can. Do you feel like having a beer? Just say so! Press <span class="command">S</span> or click on the microphone and say, for instance:
+            </p>
+            <p>
+                <span class="command">I feel like having a beer, show me pubs around here</span>
+            </p>
+            <p>
+                The browser will first <a href="https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html" title="Web Speech API">translate your voice into text</a>, then use a <a href="http://dev.maluuba.com/" title="Maluuba's API to interpret the meaning of phrases">NLU API</a> to interpret the text and extract the search terms and finally run a query on the <a href="http://developer.here.com/places">HERE Places database</a> to recommend relevant places.
+            </p>
+            <p>
+                Press <span class="command">ESC</span> to hide this dialog.
+            </p>
+            <div class="handle">Learn More</div>
+        </div>
         <div class="container">
             <div class="message"></div>
             <section class="map" data-hereimg="images/93e69212.here.png"></section>
@@ -36,6 +65,6 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
 
-        <script src="scripts/f6b83725.main.js"></script>
+        <script src="scripts/b3868d9c.main.js"></script>
 </body>
 </html>

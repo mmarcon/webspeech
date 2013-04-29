@@ -1,31 +1,31 @@
 body {
     background: #fff;
-    font-family: 'Helvetica';
-    font-weight: 200;
     color: #333;
+    font-weight: 200;
+    font-family: 'Helvetica';
 }
 
 .message {
-    background: #3cb371;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
-    color: #fff;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
+    left: 0;
     z-index: 10;
+    height: 40px;
+    background: #3cb371;
+    color: #fff;
     text-align: center;
+    font-size: 18px;
+    line-height: 40px;
     -webkit-transition:all .4s linear 0;
     -moz-transition:all .4s linear 0;
-    -o-transition:all .4s linear 0;
     -ms-transition:all .4s linear 0;
+    -o-transition:all .4s linear 0;
     transition:all .4s linear 0;
     -webkit-transform: translateY(-50px);
     -moz-transform: translateY(-50px);
-    -o-transform: translateY(-50px);
     -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
     transform: translateY(-50px);
 }
 
@@ -33,49 +33,55 @@ body {
     background: #dc143c;
 }
 
+header {
+    margin: auto;
+    width: 400px;
+}
+
 .container {
     position: relative;
+    overflow: hidden;
     margin: auto;
     width: 400px;
     border: 1px solid #ccc;
-    overflow: hidden;
+    background: #fff;
 }
 
 .map {
+    margin-bottom: -1px;
     height: 300px;
     border-bottom: 1px solid #ccc;
-    margin-bottom: -1px;
 }
 
 input {
-    border: none;
-    display: inline-block;
-    width: 88%;
-    font-family: 'Helvetica';
-    font-size: 22px;
-    color: #333;
-    height: 40px;
-    line-height: 40px;
-    margin: 3px 0;
-    padding: 0 3px;
-    outline: none;
-    text-transform: uppercase;
     position: relative;
     top: 5px;
+    display: inline-block;
+    margin: 3px 0;
+    padding: 0 3px;
+    width: 88%;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Helvetica';
+    line-height: 40px;
 }
 
 button {
-    cursor: pointer;
     display: inline-block;
     overflow: hidden;
-    border: 0;
-    height: 40px;
     margin: 0;
     padding: 0;
     width: 9%;
-    text-indent: -400px;
+    height: 40px;
+    border: 0;
     background: transparent url(../images/mic.png) no-repeat 100%;
     background-size: contain;
+    text-indent: -400px;
+    cursor: pointer;
 }
 
 button.listening {
@@ -83,26 +89,93 @@ button.listening {
 }
 
 dt {
-    font-size: 13px;
-    font-weight: bold;
-    margin: 8px 3px 3px 3px;
-    border-top: 1px solid #eee;
-    padding-top: 5px;
     overflow: hidden;
+    margin: 8px 3px 3px 3px;
+    padding-top: 5px;
+    border-top: 1px solid #eee;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 dt span {
     display: inline-block;
     margin-right: 5px;
-    background: #3cb371;
-    color: #fff;
     padding: 0 3px;
     border-radius: 3px;
+    background: #3cb371;
+    color: #fff;
 }
 
 dd {
-    font-size: 12px;
     margin: 0 3px;
+    font-size: 12px;
+}
+
+a:link, a:visited {
+    color: #0BD;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+.pullable {
+    position: absolute;
+    top: -320px;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    height: 280px;
+    background: #333;
+    box-shadow: 0 1px 3px #dedede;
+    color: #fff;
+    padding: 20px;
+}
+
+.pullable p {
+    line-height: 1.2;
+}
+
+.animatable {
+    -webkit-transition:top .3s linear 0;
+    -moz-transition:top .3s linear 0;
+    -ms-transition:top .3s linear 0;
+    -o-transition:top .3s linear 0;
+    transition:top .3s linear 0;
+}
+
+.pulled {
+    top: 0;
+}
+
+.handle {
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    width: 100px;
+    height: 20px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.handle:hover, .pulled .handle {
+    color: #0BD;
+}
+
+.command {
+    color: #222;
+    background: #fff;
+    display: inline-block;
+    padding: 1px 3px;
+    margin: 1px 0;
+    border-radius: 3px;
 }

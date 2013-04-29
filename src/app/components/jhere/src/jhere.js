@@ -665,7 +665,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         };
         head = doc.getElementsByTagName('head')[0];
         jsla = doc.createElement('script');
-        jsla.src = 'http://api.maps.nokia.com/2.2.3/jsl.js';
+        jsla.src = 'https://api.maps.nokia.com/2.2.3/jsl.js';
         jsla.type = 'text/javascript';
         jsla.charset = 'utf-8';
         jsla.onreadystatechange = function(){

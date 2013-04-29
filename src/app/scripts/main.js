@@ -207,3 +207,19 @@ $(window).on('load', function(){
     'use strict';
     window.APP.init();
 });
+
+$(function(){
+    'use strict';
+    var pullable = $('.pullable');
+    pullable.addClass('animatable');
+    $('.handle, .learn').on('click', function(e){
+        e.preventDefault();
+        pullable.toggleClass('pulled');
+    });
+    $(document).on('keyup', function(e){
+        e.stopPropagation();
+        if(event.which === 27) {
+            pullable.removeClass('pulled');
+        }
+    });
+});
