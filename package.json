@@ -22,6 +22,6 @@
   "readmeFilename": "README.md",
   "gitHead": "47c540e869a239928d88e0f2cef81f7c1c03ddc1",
   "dependencies": {
-    "node-static": "~0.6.9"
+    "node-static": "^0.7.4"
   }
 }
