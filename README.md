@@ -6,7 +6,7 @@ You will need Chrome >= 25 to try this application, as no other browsers support
 
 By clicking on the microphone icon or pressing `S` the browser will ask for permission to use the computer's microphone and then it will start listening for vocal commands.
 
-Commands are expressed in natural language, for example:
+Commands are expressed in **natural language**, for example:
  
  * `Find me a restaurant`
  * `Search for an Italian restaurant`
